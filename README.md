@@ -1,2 +1,5 @@
 # fireacademy-io
-FireAcademy.io Landing Page
+
+[FireAcademy.io](https://fireacademy.io)'s landing page
+
+Yes, it's written in plain HTML.
