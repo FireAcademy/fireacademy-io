@@ -123,7 +123,7 @@
               Open Source
             </h3>
             <p class="text-muted mb-6 mb-md-0">
-              Cryptocurrencies and open-source software go hand in hand. The code that powers FireAcademy is freely available on <a href="https://github.com/FireAcademy" target="_blank" class="link-secondary">GitHub</a>.
+              Cryptocurrencies and open-source software go hand in hand. The code that powers FireAcademy.io is freely available on <a href="https://github.com/FireAcademy" target="_blank" class="link-secondary">GitHub</a>.
             </p>
           </div>
         </div>
@@ -171,8 +171,8 @@
               Grants Program
             </p>
             <p class="lead text-center text-muted mb-6 mb-lg-8">
-              Everyone receives some free credits when they sign up. <br/>
-              Most projects are eligible to receive <a href="https://discord.gg/yNVNvQyYXn" target="_blank" class="link-secondary">even more</a>*<br/>
+              Everyone receives free credits when they sign up. <br/>
+              Most projects are eligible to receive <a href="https://docs.fireacademy.io/grants" target="_blank" class="link-secondary">even more</a>*<br/>
               <br/>
               <span class="lead text-right text-muted">* gm</span>
             </p>
@@ -198,7 +198,7 @@
             </p>
             <p class="lead text-center text-muted mb-6 mb-lg-8">
               Click the weird thing on the left or the button below to sign up.<br/>
-              No credit card required - test FireAcademy.io for free. <br/>
+              No credit card required - test FireAcademy.io for free.<br/>
               <br/>
               <a class="btn btn-lg btn-outline-danger" href="https://dashboard.fireacademy.io/" data-aos="zoom-in" data-aos-duration="500">Sign Up</a>
             </p>
@@ -237,10 +237,13 @@
                 Useful links
               </h6>
               <p>
-                <a href="https://twitter.com/fireacademyio" class="text-reset">Twitter</a>
+                <a href="https://dashboard.fireacademy.io/" class="text-reset">Dashboard</a>
               </p>
               <p>
-                <a href="https://discord.gg/yNVNvQyYXn" class="text-reset">Discord</a>
+                <a href="https://docs.fireacademy.io/" class="text-reset">Docs</a>
+              </p>
+              <p>
+                <a href="https://twitter.com/fireacademyio" class="text-reset">Twitter</a>
               </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-once="false">
@@ -254,8 +257,12 @@
           </div>
         </div>
       </section>
-      <div class="text-center p-4 mt-8 mb-4">
+      <div class="text-center p-4 mt-8">
         Copyright 2021-2022 FireAcademy SRL
+      </div>
+
+      <div id="elevator-button" class="text-center mt-4 mb-4">
+        <u>Click here to get back to the top</u>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -269,6 +276,15 @@
     </script>
     <script>
       hljs.initHighlightingOnLoad();
+    </script>
+    <script src="elevator.min.js"></script>
+    <script>
+      var elevator = new Elevator({
+        mainAudio: 'audio.mp3',
+        endAudio: 'end-audio.mp3',
+        element: document.getElementById('elevator-button'),
+        duration: 42 * 1000 // long ride
+      });
     </script>
   </body>
 </html>
